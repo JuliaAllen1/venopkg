@@ -12,15 +12,20 @@ If valid package is found, a list of package managers and the repos containing t
 `[Y/n]`
 
 The package will be installed (or not, depending on user choice.)
+
+If no package with name `[package-name]` is found, process will be aborted.
 ### Uninstall
 `venopkg rm [-p] [package-name]`
 
 If installed package with name [package-name] is found, the following will be returned.
+
 `venopkg: Package found. This package is currently taking up [storage-space] of drive space. If uninstallation continue, this space will be freed up. Uninstall? (Y/N)`
 
 `Y/N`
  
 If `Y`, the program will be uninstalled. If  the option `-p` was selected in the first step, all dependencies will be uninstalled as well. If `N`, uninstallation will be aborted.
+
+If no package with name `[package-name]` is found, process will be aborted.
 
 ## Installing venoPKG
 
