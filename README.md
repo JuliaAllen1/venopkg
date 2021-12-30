@@ -30,3 +30,12 @@ If no package with name `[package-name]` is found, process will be aborted.
 ## Installing venoPKG
 
 TODO: This section. Cannot be filled out until packaged and rolled out to GH
+
+### Upgrading 
+`venopkg vup`
+
+When run, venopkg will search for its install directory, check the contents of `/pkgmngdb` in this repo against `venopkg/pkgmngdb`. If it matches, nothing will occur. If it does not match, `/pkgmngdb` will be updated locally to match remote. 
+
+`venopkg vup -full`
+
+When run, the entire local install directory will be replaced with the contents of the remote repo, except for the required files to upgrade.
